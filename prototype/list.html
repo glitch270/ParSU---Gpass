@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registered Applicants | PARSU-GPass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="list.html">PARSU-GPass</a>
+    <span class="user">Administrator</span>
+    <button class="menu-toggle" type="button">Menu</button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main navigation">
+        <p class="nav-title">ADMINISTRATION</p>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="list.html" aria-current="page">Registered Applicants</a></li>
+        </ul>
+        <p class="nav-title">APPLICATIONS</p>
+        <ul>
+          <li><a href="#">Pending Review</a></li>
+          <li><a href="#">Resubmitted</a></li>
+          <li><a href="#">Approved</a></li>
+          <li><a href="#">Declined</a></li>
+        </ul>
+        <p class="nav-title">PAYMENTS</p>
+        <ul>
+          <li><a href="#">Pending Verification</a></li>
+          <li><a href="#">Payment History</a></li>
+        </ul>
+        <p class="nav-title">GATE PASS STICKERS</p>
+        <ul>
+          <li><a href="#">Generate Sticker</a></li>
+          <li><a href="#">Stickers &amp; Releases</a></li>
+        </ul>
+        <p class="nav-title">SYSTEM REPORTS</p>
+        <ul>
+          <li><a href="#">Applications Report</a></li>
+          <li><a href="#">Payments Report</a></li>
+          <li><a href="#">Released Stickers</a></li>
+          <li><a href="#">Expired Stickers</a></li>
+        </ul>
+        <p class="nav-title">ACCOUNT</p>
+        <ul>
+          <li><a href="#">Admin Settings</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+      <div class="page-head">
+        <div>
+          <h1>Registered Applicants</h1>
+          <p class="subtitle">Students and employees with a gate pass account</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="field">
+          <label for="search">Search</label>
+          <input class="search" type="search" id="search" placeholder="School ID, name or email">
+        </div>
+        <div class="field">
+          <label for="type">Type</label>
+          <select id="type">
+            <option value="">All types</option>
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">School ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Type</th>
+              <th scope="col">Department</th>
+              <th scope="col">Email</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="School ID" class="primary-cell">STUD-2024-0012</td>
+              <td data-label="Name">Juan Cruz Dela Cruz</td>
+              <td data-label="Type">Student</td>
+              <td data-label="Department">College of Computer Studies</td>
+              <td data-label="Email">student@parsu.edu.ph</td>
+              <td data-label="Actions" class="actions"><a class="btn btn-small btn-secondary" href="form.html">Edit</a> <button class="btn btn-small btn-danger" type="button">Delete</button></td>
+            </tr>
+            <tr>
+              <td data-label="School ID" class="primary-cell">EMP-2018-0481</td>
+              <td data-label="Name">Maria Santos Reyes</td>
+              <td data-label="Type">Employee</td>
+              <td data-label="Department">General Services Office</td>
+              <td data-label="Email">employee@parsu.edu.ph</td>
+              <td data-label="Actions" class="actions"><a class="btn btn-small btn-secondary" href="form.html">Edit</a> <button class="btn btn-small btn-danger" type="button">Delete</button></td>
+            </tr>
+            <tr>
+              <td data-label="School ID" class="primary-cell">STUD-2023-0345</td>
+              <td data-label="Name">Pedro Garcia Santos</td>
+              <td data-label="Type">Student</td>
+              <td data-label="Department">College of Education</td>
+              <td data-label="Email">pedro.santos@parsu.edu.ph</td>
+              <td data-label="Actions" class="actions"><a class="btn btn-small btn-secondary" href="form.html">Edit</a> <button class="btn btn-small btn-danger" type="button">Delete</button></td>
+            </tr>
+            <tr>
+              <td data-label="School ID" class="primary-cell">STUD-2022-0788</td>
+              <td data-label="Name">Ana Reyes Lopez</td>
+              <td data-label="Type">Student</td>
+              <td data-label="Department">College of Business</td>
+              <td data-label="Email">ana.lopez@parsu.edu.ph</td>
+              <td data-label="Actions" class="actions"><a class="btn btn-small btn-secondary" href="form.html">Edit</a> <button class="btn btn-small btn-danger" type="button">Delete</button></td>
+            </tr>
+            <tr>
+              <td data-label="School ID" class="primary-cell">EMP-2015-0102</td>
+              <td data-label="Name">Carlo Mendoza Bautista Jr.</td>
+              <td data-label="Type">Employee</td>
+              <td data-label="Department">Registrar Office</td>
+              <td data-label="Email">carlo.bautista@parsu.edu.ph</td>
+              <td data-label="Actions" class="actions"><a class="btn btn-small btn-secondary" href="form.html">Edit</a> <button class="btn btn-small btn-danger" type="button">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Showing 5 of 5 applicants</p>
+    </main>
+  </div>
+</body>
+</html>
