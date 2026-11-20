@@ -3,7 +3,7 @@
 Partido State University (PSU) vehicle gate pass.
 Web Systems 1 · Final project, based on our Database (IM1) project.
 
-Members: Danreb R. Palaypayo, Carl Andrie D. Torrecampo
+Members: Danreb R. Palaypayon, Carl Andrie D. Torrecampo
 
 ## About the project
 Students and employees of PSU who drive to campus need a gate pass sticker. PARSU-GPass lets them apply online, upload their documents, pay the fee, and track the status of their application. It gives the security office one record of who was approved, who paid, and whose sticker has expired.
